@@ -25,6 +25,7 @@
 		C0E0F5491C53C8030078E042 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0F5481C53C8030078E042 /* GuideViewController.swift */; };
 		C0E0F54B1C53C8150078E042 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0F54A1C53C8150078E042 /* RegisterViewController.swift */; };
 		C0E0F54D1C53C8390078E042 /* BindPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0F54C1C53C8390078E042 /* BindPayViewController.swift */; };
+		C0E0F5521C53CB5A0078E042 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0F5511C53CB5A0078E042 /* Define.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		C0E0F5481C53C8030078E042 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		C0E0F54A1C53C8150078E042 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C0E0F54C1C53C8390078E042 /* BindPayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindPayViewController.swift; sourceTree = "<group>"; };
+		C0E0F5511C53CB5A0078E042 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		C0E0F52F1C53C5800078E042 /* Define */ = {
 			isa = PBXGroup;
 			children = (
+				C0E0F5511C53CB5A0078E042 /* Define.swift */,
 			);
 			name = Define;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				C0E0F54B1C53C8150078E042 /* RegisterViewController.swift in Sources */,
 				C0E0F53A1C53C6DF0078E042 /* BaseOperation.swift in Sources */,
 				C0E0F54D1C53C8390078E042 /* BindPayViewController.swift in Sources */,
+				C0E0F5521C53CB5A0078E042 /* Define.swift in Sources */,
 				C0E0F5451C53C7CE0078E042 /* BasePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,7 +497,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Uber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -503,7 +509,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Uber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
